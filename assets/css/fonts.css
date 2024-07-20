@@ -1,0 +1,107 @@
+@font-face {
+	font-family: 'gilb';
+	src:url('../gilb.ttf');
+	src:url('../gilb.eot?#iefix') format('embedded-opentype'),
+		url('../gilb.woff') format('woff'),
+		url('../gilb.ttf') format('truetype'),
+		url('../gilb.svg#gilb') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'titilliumbold';
+	src:url('../titilliumbold.ttf');
+	src:url('../titilliumbold.eot?#iefix') format('embedded-opentype'),
+		url('../titilliumbold.woff') format('woff'),
+		url('../titilliumbold.ttf') format('truetype'),
+		url('../titilliumbold.svg#titilliumbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'TITILLIUMWEBR';
+	src:url('../TITILLIUMWEBR.ttf');
+	src:url('../TITILLIUMWEBR.eot?#iefix') format('embedded-opentype'),
+		url('../TITILLIUMWEBR.woff') format('woff'),
+		url('../TITILLIUMWEBR.ttf') format('truetype'),
+		url('../TITILLIUMWEBR.svg#TITILLIUMWEBR') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'LeagueGothic-Regular';
+	src:url('../LeagueGothic-Regular.ttf');
+	src:url('../LeagueGothic-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../LeagueGothic-Regular.woff') format('woff'),
+		url('../LeagueGothic-Regular.ttf') format('truetype'),
+		url('../LeagueGothic-Regular.svg#LeagueGothic-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:  url('../icomoon.eot?pxr7gr');
+	src:  url('../icomoon.eot?pxr7gr#iefix') format('embedded-opentype'),
+	  url('../icomoon.ttf?pxr7gr') format('truetype'),
+	  url('../icomoon.woff?pxr7gr') format('woff'),
+	  url('../icomoon.svg?pxr7gr#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-tiktok:before {
+	content: "\e903";
+  }
+  .icon-x:before {
+	content: "\e906";
+  }
+  .icon-twitter:before {
+	content: "\e906";
+  }
+  .icon-arrow-l:before {
+	content: "\e900";
+  }
+  .icon-arrow-r:before {
+	content: "\e901";
+  }
+  .icon-btn-r:before {
+	content: "\e902";
+  }
+  .icon-written:before {
+	content: "\e904";
+  }
+  .icon-Vector-3:before {
+	content: "\e905";
+  }
+  .icon-telegram:before {
+	content: "\e908";
+  }
+  .icon-youtube:before {
+	content: "\e909";
+  }
+  .icon-linkdin:before {
+	content: "\e90a";
+  }
+  .icon-instagram:before {
+	content: "\e90b";
+  }
+  .icon-facebook2:before {
+	content: "\ea91";
+  }
+  

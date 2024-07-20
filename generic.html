@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+    }
+
+    .div1, .div2 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+    }
+
+    .div1 {
+        background-color: rgba(255, 0, 0, 0.5); /* Red */
+        z-index: 2; /* Higher z-index to be above div2 */
+    }
+
+    .div2 {
+        background-color: rgba(0, 0, 255, 0.5); /* Blue */
+        transform: translateY(-50%); /* Translate div2 up by 50% of its own height */
+        z-index: 1; /* Lower z-index to be below div1 */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="div1"></div>
+    <div class="div2"></div>
+</div>
+
+</body>
+</html>
