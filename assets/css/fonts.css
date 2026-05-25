@@ -85,6 +85,11 @@
   }
   .icon-written:before {
 	content: "\e904";
+	
+  }
+  .icon-written2:before {
+	content: "\e904";
+	font-size: 33px;
   }
   .icon-Vector-3:before {
 	content: "\e905";

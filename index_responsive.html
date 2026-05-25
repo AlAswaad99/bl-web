@@ -7,13 +7,76 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/fonts.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+<style>
+/* === Responsive Fixes for Hamburger and Close Icons === */
+#header nav > ul > li > a.menuToggle {
+    top: 1.5em;
+    right: 1.5em;
+}
+#menu .close {
+    top: 1.5em;
+    right: 1.5em;
+}
+
+/* === Responsive Scaling for Small Screens === */
+@media screen and (max-width: 736px) {
+  .menu-icon, 
+  #menu .close svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  #header img {
+    height: 80px;
+    margin-left: 1em;
+  }
+
+  #header nav {
+    right: 1em;
+  }
+
+  .menu-column.left-column,
+  .menu-column.right-column {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .menu-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info {
+    padding: 2rem 1rem;
+    border-radius: 40px;
+    bottom: auto;
+    position: relative;
+  }
+
+  .text-center h1 {
+    font-size: 14px;
+  }
+
+  .text-center h1 span {
+    font-size: 11px;
+  }
+}
+
+/* === Fix Letter Spacing in Blog Section Headers === */
+.blog-grid .text-holder h2 {
+  letter-spacing: normal !important;
+  text-transform: none;
+}
+</style>
+
 </head>
 <body class="landing is-preload">
 
 <!-- Page Wrapper -->
 <div id="page-wrapper" class="page">
   <header id="header" class="alt">
-  <a href="index.html"><img src="images/bllogo.png" alt="" /></a>
+  <img src="images/bllogo.png" alt="" /><a href="index.html"></a>
 
   <nav id="nav">
     <ul>
@@ -41,10 +104,10 @@
           <div class="menu-container">
             <div class="menu-content">
               <div class="menu-column left-column">
-                <h2><a href="index.html"><span>01/</span> Our Works</a></h2>
-                <h2><a href="about.html"><span>02/</span> About Us</a></h2>
-                <h2><a href="blog.html"><span>03/</span> Blog</a></h2>
-                <h2 class="menu-item-disabled"><a href="#"><span>04/</span> Shop</a></h2>
+                <h2><span>01/</span> Our Works</h2>
+                <h2><span>02/</span> Shop</h2>
+                <h2><span>03/</span> About Us</h2>
+                <h2><span>04/</span> Blog</h2>
               </div>
               <div class="menu-column right-column">
                 <img src="images/bj.png" alt="Company Logo">
