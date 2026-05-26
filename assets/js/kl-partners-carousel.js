@@ -40,7 +40,10 @@ jQuery(function($){
 	};
 	var partners_carousel = $('.ts-pt-partners__carousel-wrapper');
 	if(partners_carousel){
-		enable_testimonials_partners( partners_carousel );	
+		enable_testimonials_partners( partners_carousel );
 	}
+
+	// Dynamically set copyright year
+	$('.footer-year').text(new Date().getFullYear());
 
 });
