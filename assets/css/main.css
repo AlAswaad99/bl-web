@@ -3563,8 +3563,8 @@ body.is-menu-visible #menu {
 /* Position the custom close icon */
 #menu .close {
   position: absolute;
-  top: 3em;
-  right: 9em;
+  top: 2em;
+  right: 2em;
   background: none;
   border: 0;
   padding: 0;
@@ -3677,7 +3677,7 @@ body.is-menu-visible #menu {
   outline: 0;
   position: relative;
   top: 7px;
-  right: 2.3em;
+  /* right: 2.3em; */
 }
 
 #header nav > ul > li > a.menuToggle:after {
@@ -3820,7 +3820,7 @@ body.is-menu-visible #menu {
 
 /* Jelly Animation */
 .jelly-shape {
-  animation: jellyBounce 1s infinite;
+  animation: jellyBounce 1.5s infinite;
   transform-origin: center;
 }
 
@@ -4111,7 +4111,7 @@ body.is-mobile #main > header {
 
 @media screen and (max-width: 736px) {
   #footer {
-    padding: 3em 2em 1em 2em;
+    /* padding: 3em 2em 1em 2em; */
   }
 }
 
@@ -4240,16 +4240,39 @@ body.is-mobile #main > header {
 
 @keyframes footer-vector-pop {
   /* hold visible — 2s (0% → 36%) */
-  0%  { transform: translateY(0);     opacity: 1; animation-timing-function: linear; }
-  36% { transform: translateY(0);     opacity: 1; animation-timing-function: cubic-bezier(0.4, 0, 1, 0.6); }
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+  36% {
+    transform: translateY(0);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 0.6);
+  }
   /* swipe up + fade out — 0.5s (36% → 45%) */
-  45% { transform: translateY(-110%); opacity: 0; animation-timing-function: steps(1); }
+  45% {
+    transform: translateY(-110%);
+    opacity: 0;
+    animation-timing-function: steps(1);
+  }
   /* instantly reposition below (invisible) */
-  46% { transform: translateY(110%);  opacity: 0; animation-timing-function: linear; }
+  46% {
+    transform: translateY(110%);
+    opacity: 0;
+    animation-timing-function: linear;
+  }
   /* hold hidden — 2s (46% → 82%) */
-  82% { transform: translateY(110%);  opacity: 0; animation-timing-function: cubic-bezier(0, 0.4, 0.6, 1); }
+  82% {
+    transform: translateY(110%);
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0, 0.4, 0.6, 1);
+  }
   /* swipe in from bottom + fade in — 1s (82% → 100%) */
-  100% { transform: translateY(0);    opacity: 1; }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .right-footer h1 {
   text-align: right;
@@ -4613,8 +4636,14 @@ figure.grid-effect-goliath:hover #myPath4 {
   padding-left: 9rem;
 }
 .menu-column.right-column img {
-  display: block; /* Change the display property to inline-block */
-  margin: 85px auto; /* Center the image horizontally */
+  display: block;
+  margin: 85px auto;
+}
+/* Animated logo stack inside the nav menu */
+.menu-column.right-column .footer-img-stack {
+  display: block;
+  margin: 40px auto 0;
+  width: 55%;
 }
 .contact-info h2 {
   font-size: 14px;
@@ -5265,7 +5294,7 @@ figure.blog-effect-goliath:hover {
   font-family: TITILLIUMWEBR;
   letter-spacing: normal;
   margin: 0;
-  width: 515px;
+  max-width: 515px;
   margin-bottom: 20px;
 }
 .bldescription2 {
@@ -5277,7 +5306,7 @@ figure.blog-effect-goliath:hover {
   font-family: TITILLIUMWEBR;
   letter-spacing: normal;
   margin: 0;
-  width: 515px;
+  max-width: 515px;
   margin-bottom: 20px;
 }
 .links {
@@ -5298,7 +5327,7 @@ figure.blog-effect-goliath:hover {
 }
 .iconb {
   color: white;
-  font-size: 3rem;
+  font-size: 1.4rem;
 }
 .ic-ps {
   position: relative;
@@ -5374,10 +5403,11 @@ figure.blog-effect-goliath:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
+  gap: 16px;
   max-width: fit-content;
   margin: auto;
   margin-top: 100px;
+  padding: 0 5%;
 }
 .blgrid-container2 {
   display: flex;
@@ -6248,6 +6278,14 @@ figure.about-panel-figure:hover img {
   }
 
   /* Footer */
+  .ts-pt-partners--y-title {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .ts-pt-partners__carousel-wrapper {
+    width: 100%;
+  }
   .right-footer {
     width: 100%;
     float: none;
